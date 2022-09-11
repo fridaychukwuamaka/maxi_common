@@ -5,6 +5,10 @@ class JsonConvert {
     return double.parse(val.toString());
   }
 
+    static int stringToInt(val) {
+    return int.parse(val.toString());
+  }
+
   static double stringToDoubleNull(val) {
     if (val != null) {
       return double.parse(val.toString());
