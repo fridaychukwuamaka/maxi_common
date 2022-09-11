@@ -55,6 +55,11 @@ class AppTextStyle {
     fontWeight: FontWeight.w600,
     fontSize: 24 * 0.90,
   );
+  static TextStyle headline7 = TextStyle(
+    fontFamily: _font,
+    fontWeight: FontWeight.w600,
+    fontSize: 28 * 0.90,
+  );
   static TextStyle button = TextStyle(
     fontSize: 17 * 0.90,
     fontWeight: FontWeight.w700,
