@@ -5,8 +5,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:maxi_common/http/http.dart';
 import 'package:maxi_common/model/map_result.dart';
 
-
-final lactionSearchService = Provider((ref) => LocationSearchService());
+final locationSearchService = Provider((ref) => LocationSearchService());
 
 class LocationSearchService {
   LocationSearchService();
