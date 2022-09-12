@@ -21,6 +21,8 @@ export 'src/http/http.dart';
 export 'src/routes/app_routes.dart';
 export 'src/data/model/model.dart';
 export 'src/state/state.dart';
+export 'src/db/boxes.dart';
+export 'src/db/db_adapter_register.dart';
 
 // Services
 final locationService = Provider((ref) => LocationService());
