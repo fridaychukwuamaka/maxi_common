@@ -17,8 +17,9 @@ class Ride with _$Ride {
     @JsonKey(
       name: 'number_of_seats',
       fromJson: JsonConvert.stringToInt,
+      includeIfNull: false,
     )
-        required int seatNum,
+        required int? seatNum,
     @JsonKey(
       name: 'pickup_location_longitude',
       fromJson: JsonConvert.stringToDouble,

@@ -25,8 +25,11 @@ mixin _$Ride {
   @JsonKey(
       name: 'pickup_location_latitude', fromJson: JsonConvert.stringToDouble)
   double get pickupLat => throw _privateConstructorUsedError;
-  @JsonKey(name: 'number_of_seats', fromJson: JsonConvert.stringToInt)
-  int get seatNum => throw _privateConstructorUsedError;
+  @JsonKey(
+      name: 'number_of_seats',
+      fromJson: JsonConvert.stringToInt,
+      includeIfNull: false)
+  int? get seatNum => throw _privateConstructorUsedError;
   @JsonKey(
       name: 'pickup_location_longitude', fromJson: JsonConvert.stringToDouble)
   double get pickupLong => throw _privateConstructorUsedError;
@@ -57,8 +60,8 @@ abstract class $RideCopyWith<$Res> {
           String time,
       @JsonKey(name: 'pickup_location_latitude', fromJson: JsonConvert.stringToDouble)
           double pickupLat,
-      @JsonKey(name: 'number_of_seats', fromJson: JsonConvert.stringToInt)
-          int seatNum,
+      @JsonKey(name: 'number_of_seats', fromJson: JsonConvert.stringToInt, includeIfNull: false)
+          int? seatNum,
       @JsonKey(name: 'pickup_location_longitude', fromJson: JsonConvert.stringToDouble)
           double pickupLong,
       @JsonKey(name: 'destination_location_latitude', fromJson: JsonConvert.stringToDouble)
@@ -102,7 +105,7 @@ class _$RideCopyWithImpl<$Res> implements $RideCopyWith<$Res> {
       seatNum: seatNum == freezed
           ? _value.seatNum
           : seatNum // ignore: cast_nullable_to_non_nullable
-              as int,
+              as int?,
       pickupLong: pickupLong == freezed
           ? _value.pickupLong
           : pickupLong // ignore: cast_nullable_to_non_nullable
@@ -137,8 +140,8 @@ abstract class _$$_RideCopyWith<$Res> implements $RideCopyWith<$Res> {
           String time,
       @JsonKey(name: 'pickup_location_latitude', fromJson: JsonConvert.stringToDouble)
           double pickupLat,
-      @JsonKey(name: 'number_of_seats', fromJson: JsonConvert.stringToInt)
-          int seatNum,
+      @JsonKey(name: 'number_of_seats', fromJson: JsonConvert.stringToInt, includeIfNull: false)
+          int? seatNum,
       @JsonKey(name: 'pickup_location_longitude', fromJson: JsonConvert.stringToDouble)
           double pickupLong,
       @JsonKey(name: 'destination_location_latitude', fromJson: JsonConvert.stringToDouble)
@@ -183,7 +186,7 @@ class __$$_RideCopyWithImpl<$Res> extends _$RideCopyWithImpl<$Res>
       seatNum: seatNum == freezed
           ? _value.seatNum
           : seatNum // ignore: cast_nullable_to_non_nullable
-              as int,
+              as int?,
       pickupLong: pickupLong == freezed
           ? _value.pickupLong
           : pickupLong // ignore: cast_nullable_to_non_nullable
@@ -216,7 +219,7 @@ class _$_Ride implements _Ride {
           required this.time,
       @JsonKey(name: 'pickup_location_latitude', fromJson: JsonConvert.stringToDouble)
           required this.pickupLat,
-      @JsonKey(name: 'number_of_seats', fromJson: JsonConvert.stringToInt)
+      @JsonKey(name: 'number_of_seats', fromJson: JsonConvert.stringToInt, includeIfNull: false)
           required this.seatNum,
       @JsonKey(name: 'pickup_location_longitude', fromJson: JsonConvert.stringToDouble)
           required this.pickupLong,
@@ -239,8 +242,11 @@ class _$_Ride implements _Ride {
       name: 'pickup_location_latitude', fromJson: JsonConvert.stringToDouble)
   final double pickupLat;
   @override
-  @JsonKey(name: 'number_of_seats', fromJson: JsonConvert.stringToInt)
-  final int seatNum;
+  @JsonKey(
+      name: 'number_of_seats',
+      fromJson: JsonConvert.stringToInt,
+      includeIfNull: false)
+  final int? seatNum;
   @override
   @JsonKey(
       name: 'pickup_location_longitude', fromJson: JsonConvert.stringToDouble)
@@ -319,8 +325,8 @@ abstract class _Ride implements Ride {
           required final String time,
       @JsonKey(name: 'pickup_location_latitude', fromJson: JsonConvert.stringToDouble)
           required final double pickupLat,
-      @JsonKey(name: 'number_of_seats', fromJson: JsonConvert.stringToInt)
-          required final int seatNum,
+      @JsonKey(name: 'number_of_seats', fromJson: JsonConvert.stringToInt, includeIfNull: false)
+          required final int? seatNum,
       @JsonKey(name: 'pickup_location_longitude', fromJson: JsonConvert.stringToDouble)
           required final double pickupLong,
       @JsonKey(name: 'destination_location_latitude', fromJson: JsonConvert.stringToDouble)
@@ -342,8 +348,11 @@ abstract class _Ride implements Ride {
       name: 'pickup_location_latitude', fromJson: JsonConvert.stringToDouble)
   double get pickupLat;
   @override
-  @JsonKey(name: 'number_of_seats', fromJson: JsonConvert.stringToInt)
-  int get seatNum;
+  @JsonKey(
+      name: 'number_of_seats',
+      fromJson: JsonConvert.stringToInt,
+      includeIfNull: false)
+  int? get seatNum;
   @override
   @JsonKey(
       name: 'pickup_location_longitude', fromJson: JsonConvert.stringToDouble)
