@@ -13,3 +13,4 @@ export 'image_selector.dart';
 export 'app_page_view.dart';
 export 'document_selector.dart';
 export 'buttons/modal_back_btn.dart';
+export 'drawer_user_info.dart';
