@@ -1,6 +1,6 @@
 
 
-abstract class Routes {
+abstract class CommonRoutes {
   static const initial = '/';
   static const signIn = '/sign-in';
   static const signUp = '/sign-up';
