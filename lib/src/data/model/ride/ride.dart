@@ -19,7 +19,7 @@ class Ride with _$Ride {
       fromJson: JsonConvert.stringToInt,
       includeIfNull: false,
     )
-        required int? seatNum,
+        int? seatNum,
     @JsonKey(
       name: 'pickup_location_longitude',
       fromJson: JsonConvert.stringToDouble,
@@ -43,7 +43,17 @@ class Ride with _$Ride {
 
   factory Ride.fromJson(Map<String, dynamic> json) => _$RideFromJson(json);
 
-  factory Ride.initial() => const Ride(
+  factory Ride.riderInitial() => const Ride(
+        time: '',
+        pickupLat: 0.0,
+        pickupLong: 0.0,
+        dropoffLat: 0.0,
+        dropoffLong: 0.0,
+        pickupAddr: '',
+        dropoffAddr: '',
+      );
+
+  factory Ride.driverInitial() => const Ride(
         time: '',
         pickupLat: 0.0,
         pickupLong: 0.0,

@@ -220,7 +220,7 @@ class _$_Ride implements _Ride {
       @JsonKey(name: 'pickup_location_latitude', fromJson: JsonConvert.stringToDouble)
           required this.pickupLat,
       @JsonKey(name: 'number_of_seats', fromJson: JsonConvert.stringToInt, includeIfNull: false)
-          required this.seatNum,
+          this.seatNum,
       @JsonKey(name: 'pickup_location_longitude', fromJson: JsonConvert.stringToDouble)
           required this.pickupLong,
       @JsonKey(name: 'destination_location_latitude', fromJson: JsonConvert.stringToDouble)
@@ -326,7 +326,7 @@ abstract class _Ride implements Ride {
       @JsonKey(name: 'pickup_location_latitude', fromJson: JsonConvert.stringToDouble)
           required final double pickupLat,
       @JsonKey(name: 'number_of_seats', fromJson: JsonConvert.stringToInt, includeIfNull: false)
-          required final int? seatNum,
+          final int? seatNum,
       @JsonKey(name: 'pickup_location_longitude', fromJson: JsonConvert.stringToDouble)
           required final double pickupLong,
       @JsonKey(name: 'destination_location_latitude', fromJson: JsonConvert.stringToDouble)
