@@ -1,5 +1,5 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'position.dart';
+import '../position/position.dart';
 part 'trip.freezed.dart';
 
 @freezed

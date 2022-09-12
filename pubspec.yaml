@@ -26,6 +26,10 @@ dependencies:
   dartz: ^0.10.1
   location: ^4.4.0
   geocoding: ^2.0.5
+  loading_animation_widget: ^1.2.0+3
+  pinput: ^2.2.12
+  flutter_svg: ^1.1.5
+  r_dotted_line_border: ^0.1.1
 
 dev_dependencies:
   flutter_test:

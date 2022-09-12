@@ -3,7 +3,7 @@ import 'package:dartz/dartz.dart';
 import 'package:dio/dio.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:maxi_common/http/http.dart';
-import 'package:maxi_common/model/map_result.dart';
+import 'package:maxi_common/model/map_result/map_result.dart';
 
 final locationSearchService = Provider((ref) => LocationSearchService());
 

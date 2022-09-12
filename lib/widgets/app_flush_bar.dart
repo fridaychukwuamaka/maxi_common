@@ -8,7 +8,7 @@ import 'package:maxi_common/themes/themes.dart';
 class AppFlushBar {
   AppFlushBar._();
 
-
+  
 
   static Future<void> show(
     String message, {
@@ -42,7 +42,8 @@ class AppFlushBar {
       flushbarPosition: position,
       borderRadius: BorderRadius.circular(5),
       duration: const Duration(seconds: 3),
-      messageColor:  Colors.black ,
+      // backgroundColor: !_isDarkMode ? AppColors.darkModeScaffold : Colors.white,
+      messageColor:  Colors.black,
       leftBarIndicatorColor: AppColors.orangeRed,
     ).show(Get.context!);
   }
@@ -62,7 +63,8 @@ class AppFlushBar {
       flushbarPosition: position,
       borderRadius: BorderRadius.circular(5),
       duration: const Duration(seconds: 3),
-      messageColor:   Colors.black ,
+      // backgroundColor: !_isDarkMode ? AppColors.darkModeScaffold : Colors.white,
+      messageColor: Colors.black ,
       leftBarIndicatorColor: Colors.green,
     ).show(Get.context!);
   }
@@ -87,7 +89,8 @@ class AppFlushBar {
       ),
       flushbarPosition: position,
       margin: const EdgeInsets.all(6.0),
-      messageColor:   Colors.black ,
+      // backgroundColor: !_isDarkMode ? AppColors.darkModeScaffold : Colors.white,
+      messageColor:  Colors.black,
       message: msg,
       duration: const Duration(seconds: 3),
       leftBarIndicatorColor: AppColors.primary,

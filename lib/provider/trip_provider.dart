@@ -1,6 +1,6 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:maxi_common/model/position.dart';
-import 'package:maxi_common/model/trip.dart';
+import 'package:maxi_common/model/position/position.dart';
+import 'package:maxi_common/model/trip/trip.dart';
 
 final tripProvider =
     StateNotifierProvider<TripNotifier, Trip>((ref) => TripNotifier(ref.read));

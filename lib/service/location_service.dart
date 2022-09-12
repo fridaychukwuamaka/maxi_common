@@ -2,7 +2,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:location/location.dart';
 import 'package:geocoding/geocoding.dart' as geo_coding;
-import 'package:maxi_common/model/position.dart';
+import 'package:maxi_common/model/position/position.dart';
 
 final locationService = Provider((ref) => LocationService());
 

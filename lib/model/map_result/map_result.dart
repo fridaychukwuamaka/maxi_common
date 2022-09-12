@@ -1,7 +1,7 @@
 // ignore_for_file: invalid_annotation_target
 import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
-import 'package:maxi_common/model/position.dart';
+import 'package:maxi_common/model/position/position.dart';
 import 'package:maxi_common/helper/helper.dart';
 part 'map_result.freezed.dart';
 part 'map_result.g.dart';

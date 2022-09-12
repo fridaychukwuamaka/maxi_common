@@ -1,5 +1,5 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:maxi_common/model/user.dart';
+import 'package:maxi_common/model/user/user.dart';
 import 'package:maxi_common/repository/local_data.dart';
 import 'package:maxi_common/db/boxes.dart';
 

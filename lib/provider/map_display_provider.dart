@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
-import 'package:maxi_common/model/position.dart';
+import 'package:maxi_common/model/position/position.dart';
 import 'package:maxi_common/service/location_service.dart';
 import 'package:maxi_common/themes/themes.dart';
 

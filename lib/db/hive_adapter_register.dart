@@ -1,5 +1,5 @@
 import 'package:hive_flutter/hive_flutter.dart';
-import 'package:maxi_common/model/user.dart';
+import 'package:maxi_common/model/user/user.dart';
 import 'package:maxi_common/enums/gender.dart';
 import 'boxes.dart';
 

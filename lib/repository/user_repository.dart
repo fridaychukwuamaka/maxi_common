@@ -2,7 +2,7 @@ import 'package:dartz/dartz.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:maxi_common/data_sources/user_local_data_source.dart';
 import 'package:maxi_common/data_sources/user_remote_data_source.dart';
-import 'package:maxi_common/model/user.dart';
+import 'package:maxi_common/model/user/user.dart';
 import 'package:maxi_common/http/http.dart';
 
 final userRepository = Provider((ref) => UserRepository(ref.read));
