@@ -2,6 +2,7 @@ library maxi_common;
 
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'src/data/repository/auth_repository.dart';
+import 'src/data/repository/token_repository.dart';
 import 'src/data/repository/user_repository.dart';
 import 'src/provider/map_display_provider.dart';
 import 'src/provider/trip_provider.dart';
@@ -18,6 +19,9 @@ final locationService = Provider((ref) => LocationService());
 
 final locationSearchService = Provider((ref) => LocationSearchService());
 
+final tokenRepository = Provider<TokenRepository>((ref) {
+  return TokenRepository();
+});
 
 // Providers
 

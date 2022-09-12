@@ -1,4 +1,3 @@
-import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:maxi_common/src/db/boxes.dart';
 
 abstract class TokenRepositoryProtocol {
@@ -7,9 +6,6 @@ abstract class TokenRepositoryProtocol {
   Future<String?> fetchToken();
 }
 
-final tokenRepository = Provider<TokenRepository>((ref) {
-  return TokenRepository();
-});
 
 class TokenRepository implements TokenRepositoryProtocol {
   @override
