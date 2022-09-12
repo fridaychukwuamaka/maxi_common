@@ -46,3 +46,9 @@ final userProvider = StateNotifierProvider<UserNotifier, User>((ref) {
 final authRepositoryProvider = Provider((ref) => AuthRepository(ref.read));
 
 final userRepository = Provider((ref) => UserRepository(ref.read));
+
+/// A Calculator.
+class Calculator {
+  /// Returns [value] plus 1.
+  int addOne(int value) => value + 1;
+}
