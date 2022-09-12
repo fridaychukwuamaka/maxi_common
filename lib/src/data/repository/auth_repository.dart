@@ -1,7 +1,6 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:maxi_common/src/http/http.dart';
 
-final authRepositoryProvider = Provider((ref) => AuthRepository(ref.read));
 
 class AuthRepository implements AuthRepositoryProtocol {
   AuthRepository(this._reader);

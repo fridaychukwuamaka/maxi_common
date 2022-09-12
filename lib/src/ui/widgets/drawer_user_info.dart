@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:maxi_common/src/provider/user_provider.dart';
+import 'package:maxi_common/maxi_common.dart';
 import 'package:maxi_common/src/themes/themes.dart';
 
 class DrawerUserInfo extends ConsumerWidget {

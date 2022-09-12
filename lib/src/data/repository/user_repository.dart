@@ -5,8 +5,6 @@ import 'package:maxi_common/src/data/data_sources/user_remote_data_source.dart';
 import 'package:maxi_common/src/data/model/user/user.dart';
 import 'package:maxi_common/src/http/http.dart';
 
-final userRepository = Provider((ref) => UserRepository(ref.read));
-
 class UserRepository {
   UserRepository(this._read);
 

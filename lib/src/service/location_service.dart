@@ -4,7 +4,6 @@ import 'package:location/location.dart';
 import 'package:geocoding/geocoding.dart' as geo_coding;
 import 'package:maxi_common/src/data/model/position/position.dart';
 
-final locationService = Provider((ref) => LocationService());
 
 class LocationService {
   Location location = Location();

@@ -1,16 +1,11 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:maxi_common/maxi_common.dart';
 import 'package:maxi_common/src/http/http.dart';
 import 'package:maxi_common/src/data/model/map_result/map_result.dart';
-import 'package:maxi_common/src/service/location_search_service.dart';
-
 import '../state/flow.dart';
 
 typedef SearchLocationState = Flow<APIResponse, List<MapResult>>;
 
-final searchLocationProvider = StateNotifierProvider.autoDispose<
-    SearchLocationNotifier, SearchLocationState>((ref) {
-  return SearchLocationNotifier(ref.read);
-});
 
 class SearchLocationNotifier extends StateNotifier<SearchLocationState> {
   SearchLocationNotifier(this._read)

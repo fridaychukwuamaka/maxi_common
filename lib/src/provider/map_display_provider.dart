@@ -1,14 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
+import 'package:maxi_common/maxi_common.dart';
 import 'package:maxi_common/src/data/model/position/position.dart';
 import 'package:maxi_common/src/service/location_service.dart';
 import 'package:maxi_common/src/themes/themes.dart';
-import 'trip_provider.dart';
 
-final mapDisplayProvider = Provider((ref) {
-  return MapDisplayProvider(ref.read);
-});
 
 class MapDisplayProvider with ChangeNotifier {
   MapDisplayProvider(this._read);

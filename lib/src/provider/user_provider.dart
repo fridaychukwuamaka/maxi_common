@@ -1,14 +1,11 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:maxi_common/maxi_common.dart';
 import 'package:maxi_common/src/data/model/user/user.dart';
-import 'package:maxi_common/src/data/repository/user_repository.dart';
 import 'package:maxi_common/src/enums/gender.dart';
 import 'package:maxi_common/src/http/http.dart';
-import 'package:maxi_common/src/ui/widgets/widgets.dart';
 
 
-final userProvider = StateNotifierProvider<UserNotifier, User>((ref) {
-  return UserNotifier(ref.read);
-});
+
 
 class UserNotifier extends StateNotifier<User> {
   UserNotifier(this._read) : super(User.empty()) {
