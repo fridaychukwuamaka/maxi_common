@@ -1,6 +1,6 @@
 library maxi_common;
 
-export 'widgets/widgets.dart';
+export 'src/ui/widgets/widgets.dart';
 
 /// A Calculator.
 class Calculator {
