@@ -20,6 +20,7 @@ export 'src/enums/enum.dart';
 export 'src/http/http.dart';
 export 'src/routes/app_routes.dart';
 export 'src/data/model/model.dart';
+export 'src/state/state.dart';
 
 // Services
 final locationService = Provider((ref) => LocationService());
