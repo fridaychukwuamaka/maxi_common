@@ -1,8 +1,5 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:maxi_common/maxi_common.dart';
-import 'package:maxi_common/src/data/model/user/user.dart';
-import 'package:maxi_common/src/enums/gender.dart';
-import 'package:maxi_common/src/http/http.dart';
 
 
 
