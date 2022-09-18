@@ -39,8 +39,7 @@ class AppFlushBar {
       flushbarPosition: position,
       borderRadius: BorderRadius.circular(5),
       duration: const Duration(seconds: 3),
-      // backgroundColor: !_isDarkMode ? AppColors.darkModeScaffold : Colors.white,
-      messageColor: Colors.black,
+      messageColor: Colors.white,
       leftBarIndicatorColor: AppColors.orangeRed,
     ).show(Get.context!);
   }
@@ -60,8 +59,7 @@ class AppFlushBar {
       flushbarPosition: position,
       borderRadius: BorderRadius.circular(5),
       duration: const Duration(seconds: 3),
-      // backgroundColor: !_isDarkMode ? AppColors.darkModeScaffold : Colors.white,
-      messageColor: Colors.black,
+      messageColor: Colors.white,
       leftBarIndicatorColor: Colors.green,
     ).show(Get.context!);
   }
@@ -86,8 +84,7 @@ class AppFlushBar {
       ),
       flushbarPosition: position,
       margin: const EdgeInsets.all(6.0),
-      // backgroundColor: !_isDarkMode ? AppColors.darkModeScaffold : Colors.white,
-      messageColor: Colors.black,
+      messageColor: Colors.white,
       message: msg,
       duration: const Duration(seconds: 3),
       leftBarIndicatorColor: AppColors.primary,
